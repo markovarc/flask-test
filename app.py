@@ -199,7 +199,7 @@ def render_base(content):
         <nav class="nav">
             <a href="/">Главная</a>
             <a href="/admin">Админка</a>
-            <a href="/export">📊 Отчёт</a>
+            <a href="/export"> Отчёт</a>
         </nav>
     </header>
     <div class="container">
@@ -228,7 +228,7 @@ def index():
                 {''.join(f'''
                 <tr>
                     <td>{row[1]}</td>
-                    <td><a class="btn" href="/calendar/{row[0]}">📅 Календарь</a></td>
+                    <td><a class="btn" href="/calendar/{row[0]}"> Календарь</a></td>
                 </tr>
                 ''' for row in machines)}
             </table>
@@ -288,10 +288,10 @@ def admin():
         <div class="card">
             <h1>Административная панель</h1>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
-                <a class="btn" href="/admin/machines">🚜 Управление техникой</a>
-                <a class="btn" href="/admin/drivers">👤 Управление водителями</a>
-                <a class="btn" href="/admin/counterparties">🏢 Управление контрагентами</a>
-                <a class="btn" href="/admin/records">📅 Управление записями</a>
+                <a class="btn" href="/admin/machines"> Управление техникой</a>
+                <a class="btn" href="/admin/drivers"> Управление водителями</a>
+                <a class="btn" href="/admin/counterparties"> Управление контрагентами</a>
+                <a class="btn" href="/admin/records"> Управление записями</a>
             </div>
         </div>
     ''')
