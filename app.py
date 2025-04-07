@@ -228,7 +228,7 @@ def index():
                 {''.join(f'''
                 <tr>
                     <td>{row[1]}</td>
-                    <td><a class="btn" href="/calendar/{row[0]}"> Календарь</a></td>
+                    <td><a class="btn" href="/calendar/{row[0]}">Календарь</a></td>
                 </tr>
                 ''' for row in machines)}
             </table>
